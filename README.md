@@ -1,6 +1,14 @@
 # RabbitMQ Hello World
 
-PHP study on RabbitMQ
+PHP simplest study on RabbitMQ message queue, with a basic UI for sending messages.
 
-## To run latest RabbitMQ 4.0.x
+## How to run
+
+### Run RabbitMQ
 docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:4.0-management
+
+### Run receiver
+php receive.php
+
+### Run sender
+Navigate to index.html and send a message
